@@ -1,0 +1,54 @@
+.gitMain{
+    min-height: 20vh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+.gitMain > h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.gitimgBx{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: flex-end;
+    /* border: 2px solid white; */
+}
+.gitimgBx > img{
+    width: 80%;
+}
+.gitimgBx:last-child > img{
+    width: 50%;
+}
+
+@media only screen and (max-width: 800px){
+    .gitMain{
+        /* border: 1px solid white; */
+    }
+    .gitimgBx{
+        width: 85%;
+        flex-direction: column;
+        /* border: 1px solid white; */
+    }   
+    .gitMain > h1{
+        width: 85%;
+        font-size: 35px;
+        /* border: 1px solid white; */
+    }
+    .gitimgBx > img{
+        width: 100%;
+    }
+    .gitimgBx:last-child img {
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+}

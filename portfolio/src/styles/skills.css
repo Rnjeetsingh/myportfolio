@@ -1,0 +1,115 @@
+.skills{
+    font-family: sans-serif;
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+    /* margin-bottom: 150px; */
+    /* gap: 120px; */
+    /* margin-bottom: 50px; */
+    /* background: blue; */
+    /* background: rgba(0,0,0,0.5); */
+    /* border: 1px solid red; */
+}
+.skills > h1{
+    color: white;
+    font-size: 50px;
+}
+
+.skills > .box{
+    height: 50%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+.skills > .box > .items{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    user-select: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5),
+                0 0 5px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    /* border: 1px solid white; */
+    background-color: rgba(255,255,255,0.1);
+}
+.skills > .box > .items::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+    transition: 0.5s;
+}
+.skills > .box > .items:nth-child(1)::before{
+    background-color: aquamarine;
+}
+.skills > .box > .items:nth-child(2)::before{
+    background-color: darkorange;
+}
+.skills > .box > .items:nth-child(3)::before{
+    background-color: blue;
+}
+.skills > .box > .items:nth-child(4)::before{
+    background-color: rgb(255, 208, 0);
+}
+.skills > .box > .items:nth-child(5)::before{
+    background-color: royalblue;
+}
+.skills > .box > .items:hover::before{
+    transform: scale(8);
+}
+.skills > .box > .items:hover > h1,
+.skills > .box > .items:hover > svg{
+    transform: scale(0.8)
+
+}
+.skills > .box > .items > svg{
+    fill: white;
+    height: 80px;
+    z-index: 2;
+    transition: 0.5s ease;
+}
+.skills > .box > .items > h1{
+    z-index: 2;
+    transition: 0.5s ease;;
+    font-size: 20px;
+    transition-delay: 0.3s;
+}
+
+@media only screen and (max-width: 900px){
+    .skills {
+        /* margin-top: 30px; */
+    }
+    .skills > .box{
+        flex-wrap: wrap;
+    }
+    .skills > .box > .items{
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .skills{
+        /* border: 1px solid #fff; */
+    }
+    .skills > .box{
+        flex-wrap: wrap;
+        padding: 30px;
+        gap: 0px;
+    }
+}

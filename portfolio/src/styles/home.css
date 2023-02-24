@@ -1,0 +1,197 @@
+#home{
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    font-family: sans-serif;
+    /* background-color: #0c141b; */
+    /* background-color: rgba(0,0,0,0.5); */
+}
+#home > .box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    width: 25%;
+    height: 450px;
+    /* border: 1px solid white; */
+}
+#home > .box:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home > .box:first-child{
+    /* background-color: rgba(0,0,0,0.5); */
+    /* padding: 50px 20px; */
+    width: 65%;
+}
+#home > .box > .data{
+    /* border: 1px solid lime; */
+    color: white;
+}
+#home > .box > .data > p{
+    width: 80%;
+    line-height: 35px;
+    font-size: 25px;
+    color: #ccc;
+    color: white;
+}
+#home > .box > .data > h2{
+    line-height: 0;
+    font-size: 30px;
+    color: #ccc;
+    color: white;
+}
+#home > .box > .data > h1{
+    font-size: 50px;
+}
+#home > .box > .data > a >button{
+    padding: 10px 40px;
+    background: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#home > .box > .icons{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+#home > .box > .imgbx{
+    position: relative;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    background-image: url(https://i.ibb.co/X8c88JK/port.png);
+    background-size: 100%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+
+    border-left: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+    border-top: 2px solid purple;
+    border-right: 2px solid purple;
+   
+}
+/* #home > .box > .imgbx::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    border-left: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+    animation: glow 20s linear infinite;
+    
+} */
+/* #home > .box > .imgbx::after{
+    content: "";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    border-top: 2px solid purple;
+    border-right: 2px solid purple;
+    z-index: -1;
+    animation: glow 20s linear infinite;
+} */
+@keyframes glow {
+    0%{
+        background-position: 00;
+    }
+    50%{
+        background-position: 1000px;
+    }
+    100%{
+        background-position: 400px;
+    }
+}
+#home > .box > .imgbx > img{
+    position: relative;
+    width: 98%;
+    visibility: hidden;
+    height: 120%;
+    background-color: rgb(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+
+
+
+
+@media only screen and (max-width: 800px){
+    #home{
+        /* position: relative; */
+        padding: 20px 0;;
+        gap: 20px;
+        flex-direction: column;
+    }
+    #home > .box:first-child{
+        width: 90%;
+        padding: 20 40px;
+    }
+    #home > .box > .data p{
+        position: relative;
+        width: 100%;
+        left: 15px;
+        /* border: 1px solid #fff; */
+    }
+    #home > .box > .data h1{
+        font-size: 30px;;
+        text-align: start;
+    }
+    #home > .box > .data h2{
+        line-height: 0;
+    }
+    #home > .box > .data{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid #fff; */
+    }
+    #home > .box{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid #fff; */
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 768px){
+
+    h1,h2 {
+        font-weight: 200;
+        margin: 0.4em 0;
+      }
+      h1 { font-size: 3.5em; }
+      h2 {
+        color: #888;
+        font-size: 2em;
+      }
+    
+   
+
+}
+

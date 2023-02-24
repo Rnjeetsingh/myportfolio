@@ -1,0 +1,118 @@
+#projects{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0;
+    font-family: sans-serif;
+}
+#projects > h1{
+    color: white;
+}
+#projects > .card{
+    position: relative;
+    width: 80%;
+    min-height: 220px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 1px solid rgb(0, 171, 137); */
+    backdrop-filter: blur(5px);
+    background-color: rgb(255,255,255,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#projects > .card > .imgBx{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#projects > .card:hover > .imgBx > img{
+    transform: scale(1.05);
+}
+#projects > .card > .imgBx > img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+#projects > .card > .data{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+#projects > .card > .data > h1{
+    color: white;
+}
+#projects > .card > .data > h1 > span{
+    color: rgb(0, 171, 137);
+}
+#projects > .card > .data > p{
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+    color: #a3a3a3;
+    color: white;
+}
+#projects > .card > .data > .lang{
+    display: flex;
+    gap: 30px;
+    color: white;
+    font-weight: 900;
+    flex-wrap: wrap;
+}
+#projects > .card > .data > .links{
+    display: flex;
+    gap: 30px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+#projects > .card > .data > .links > a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 800px){
+
+    #projects > .card{
+        left: 8px;
+        flex-direction: column;
+    }
+    #projects > h1{
+        border: 1px solid #fff;
+        text-align: center;
+        font-size: 25px;
+        width: 100%;
+    }
+    #projects > .card > .data > h1{
+        font-size: 30px;
+        text-align: start;
+    }
+    #projects > .card > .data > p{
+        width: 100%;
+        text-align: start;
+        color: white;
+    }
+    #projects > .card > .imgBx{
+        border: 1px solid white;
+        height: 250px;
+    }
+    #projects > .card > .data > .lang{
+        gap: 15px;
+    }
+    #projects > .card > .data > .lang span{
+        padding: 4px 8px;
+        background-color: white;
+        color: black;
+        margin: 0px;
+    }
+}
